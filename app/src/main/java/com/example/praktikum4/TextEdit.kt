@@ -27,7 +27,7 @@ fun FormDataDiri(modifier: Modifier) {
             singleLine = true,
             shape = MaterialTheme.shapes.large,
             modifier = Modifier.width(250.dp),
-            label = {text= "Nama Lengkap"},
+            label = {Text(text = "Nama Lengkap")},
             onValueChange = {
                 textNama = it
             }
@@ -39,7 +39,7 @@ fun FormDataDiri(modifier: Modifier) {
             Row(modifier = Modifier.selectable(
                 selected = textJK == item,
                 onClick = { textJK = item}
-            ), verticalAlignment = Alignment.centerVerticall) {
+            ), verticalAlignment = Alignment.centerVertically) {
                 RadioButton(
                     selected = textJK == item,
                     onClick = {
@@ -49,6 +49,8 @@ fun FormDataDiri(modifier: Modifier) {
                 Text(item)
             }
         }
+        
     }
+
 
 }
