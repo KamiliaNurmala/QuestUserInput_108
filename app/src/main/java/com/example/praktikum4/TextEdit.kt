@@ -68,7 +68,7 @@ fun FormDataDiri(modifier: Modifier) {
             Row(modifier = Modifier.selectable(
                 selected = textJK == item,
                 onClick = { textJK = item}
-            ), verticalAlignment = Alignment.centerVertically) {
+            ), verticalAlignment = Alignment.CenterVertically) {
                 RadioButton(
                     selected = textJK == item,
                     onClick = {
@@ -97,7 +97,7 @@ fun FormDataDiri(modifier: Modifier) {
                 id = R.dimen.padding_medium
         )),
         thickness = dimensionResource(R.dimen.divider_tipis),
-        color = Color.DarkGrey
+        color = Color.DarkGray
     )
 
     Button(
@@ -114,16 +114,16 @@ fun FormDataDiri(modifier: Modifier) {
 
     HorizontalDivider(
         modifier = Modifier
-            .padding(bottom = dimensionResource(R.diem.padding_medium),
+            .padding(bottom = dimensionResource(R.dimen.padding_medium),
                 top = dimensionResource(
             id = R.dimen.padding_medium
         )),
-        thickness = dimensionResource(R.dimen.divider_tipis)
-        color = Color.DarkGrey
+        thickness = dimensionResource(R.dimen.divider_tipis),
+        color = Color.DarkGray
     )
 
     ElevatedCard(
-        elevation = CardDefaults.cardEvaluation(defaultElevation = 10.dp),
+        elevation = CardDefaults.cardElevation(defaultElevation = 10.dp),
         colors = CardDefaults.cardColors(containerColor = Color.Black),
         modifier = Modifier
             .height(100.dp)
