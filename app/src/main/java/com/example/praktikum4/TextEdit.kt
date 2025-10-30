@@ -1,5 +1,6 @@
 package com.example.praktikum4
 
+import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.runtime.mutableStateOf
@@ -86,6 +87,16 @@ fun FormDataDiri(modifier: Modifier) {
     ){
         Text(stringResource(R.string.submit))
     }
+
+    HorizontalDivider(
+        modifier = Modifier
+            .padding(bottom = dimensionResource(R.diem.padding_medium),
+                top = dimensionResource(
+            id = R.dimen.padding_medium
+        )),
+        thickness = dimensionResource(R.dimen.divider_tipis)
+        color = Color.DarkGrey
+    )
 
 
 }
