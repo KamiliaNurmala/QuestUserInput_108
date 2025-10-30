@@ -4,8 +4,6 @@ import androidx.compose.runtime.mutableStateOf
 
 
 @Composable
-fun FormDataDiri(modifier: Modifier)
-{
-    var textNama by remember (mutableStateOf(""))
+fun FormDataDiri(modifier: Modifier) {
 
 }
