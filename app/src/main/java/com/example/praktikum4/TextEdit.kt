@@ -1,6 +1,10 @@
 package com.example.praktikum4
 
+import androidx.compose.material3.HorizontalDivider
+import androidx.compose.material3.OutlinedTextField
 import androidx.compose.runtime.mutableStateOf
+import androidx.compose.ui.res.dimensionResource
+import androidx.compose.ui.res.stringResource
 
 
 @Composable
@@ -49,8 +53,19 @@ fun FormDataDiri(modifier: Modifier) {
                 Text(item)
             }
         }
-        
     }
+
+    OutlinedTextField(
+        value = textAlamat,
+        singleLine = true,
+        modifier = Modifier.width(250.dp),
+        label = {Text(text = "Alamat Lengkap")},
+        onValueChange = {
+            textAlamat = it
+        }
+    )
+
+
 
 
 }
