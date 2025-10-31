@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">Input Pengguna</string>
     <string name="submit">Submit</string>
+
+<!--    Projek Formulir pendaftaran-->
+
+    <string name="formulir_pendaftaran">Formulir Pendaftaran</string>
 </resources>
