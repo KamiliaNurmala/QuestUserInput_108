@@ -26,3 +26,5 @@ fun FormulirPendaftaran(modifier: Modifier = Modifier) {
     var alamat by remember { mutableStateOf("") }
     var jenis by remember { mutableStateOf("") }
     var status by remember { mutableStateOf("") }
+
+}
